@@ -1,0 +1,32 @@
+# Fichiers de bytecode Python
+__pycache__/
+*.py[cod]
+
+# Dossiers de l'environnement virtuel Python
+venv/
+ENV/
+env/
+
+# Fichiers de base de données SQLite
+*.sqlite
+
+# Fichiers et dossiers Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Fichiers système d'exploitation
+.DS_Store
+Thumbs.db
+
+# Fichier .env pour les variables d'environnement
+.env
+
+# Fichiers de journalisation
+*.log
+
+# Dossiers et fichiers spécifiques à l'IDE (si vous en utilisez un)
+.idea/  # pour JetBrains PyCharm
+.vscode/  # pour Visual Studio Code
+*.sublime-workspace  # pour Sublime Text
