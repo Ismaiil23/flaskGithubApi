@@ -1,0 +1,23 @@
+{% extends "/layout/layout.html" %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<div class="paragraph">
+    <p>Mes contact :</p>
+</div>
+<div id="img_contact">
+    <figure>
+        <img src="{{ url_for('static', filename='images/linkedin.png') }}" alt="linkedin" onclick="window.location.href='https://www.linkedin.com/in/ismaïl-mesrouk-8a330b251/'">
+        <figcaption>LinkedIn</figcaption>
+    </figure>
+    <figure>
+        <img src="{{ url_for('static', filename='images/github.png') }}" alt="github" onclick="window.location.href='https://github.com/Ismaiil23'">
+        <figcaption>GitHub</figcaption>
+    </figure>
+    <figure>
+        <img src="{{ url_for('static', filename='images/mail.png') }}" alt="mail" onclick="window.location.href='mailto:ismail.mesrouk@etu.univ-amu.fr'">
+        <figcaption>Email</figcaption>
+    </figure>
+</div>
+{% endblock %}
