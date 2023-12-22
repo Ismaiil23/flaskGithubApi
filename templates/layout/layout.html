@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <Nav>
+        
+        <h1  onclick="window.location.href='/'">Accueil</h1>
+
+
+        <button  onclick="window.location.href='/Contact'">Contact</button>
+    </Nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    
+
+    <footer>
+        <p>Site réalisé par <a href="https://www.linkedin.com/in/ismaïl-mesrouk-8a330b251/">Mesrouk Ismaïl</a></p><br>
+    </footer>
+</body>
+</html>

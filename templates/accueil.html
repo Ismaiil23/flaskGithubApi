@@ -1,0 +1,25 @@
+{% extends "/layout/layout.html" %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="userInfo">
+                    <p id="name"></p>
+                    <p id="bio"></p>
+                    <p id="repos"></p>
+                </div>
+                <div class="paragraph">
+                    <p>Mes projets : </p>
+                </div>
+               
+               
+                
+                <div id="repos-container"></div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="{{ url_for('static', filename='js/script.js') }}"></script>
+    {% endblock %}    
